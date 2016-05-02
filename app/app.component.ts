@@ -1,9 +1,16 @@
 import {Component} from 'angular2/core';
+import {Heroe} from "./heroe.entity";
 require('./style/style.css');
 
 @Component({
     selector: 'my-app',
-    template: `<h1>My First Angular 2 App</h1>`
+    templateUrl: 'app/app.component.html'
 })
 
-export class AppComponent {}
+export class AppComponent {
+    title= 'Tour of Heroes';
+    hero: Heroe = {
+        id:1,
+        name:'Windstorm'
+    }
+}
