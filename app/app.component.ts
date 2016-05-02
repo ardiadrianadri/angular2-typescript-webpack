@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+require('./style/style.css');
 
 @Component({
     selector: 'my-app',
