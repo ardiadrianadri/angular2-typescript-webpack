@@ -2,11 +2,13 @@ import {Component, OnInit} from "angular2/core";
 import {Heroe} from "./heroe.entity";
 import {HeroeService} from "./heroe.service";
 import {Router} from "angular2/router";
+import {Toolbar} from "primeng/primeng";
 
 @Component({
     selector:'my-dashboard',
     templateUrl:'app/dashboard.component.html',
-    styleUrls:['app/dashboard.component.css']
+    styleUrls:['app/dashboard.component.css'],
+    directives:[Toolbar]
 })
 export class DashboardComponent implements OnInit{
     heroes: Heroe[];
@@ -22,6 +24,10 @@ export class DashboardComponent implements OnInit{
     
     gotoDetail(heroe: Heroe){
         this._router.navigate(['HeroDetail',{id:heroe.id}]);
+    }
+
+    newInteraction(){
+        alert("Se pulso el boton");
     }
     
 }
