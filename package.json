@@ -4,7 +4,8 @@
   "description": "Angular 2, TypeScript and Webpack",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "test": "karma start"
   },
   "license": "ISC",
   "devDependencies": {

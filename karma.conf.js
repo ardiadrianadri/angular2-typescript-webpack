@@ -15,8 +15,8 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            {pattern: 'node_modules/es6-shim/es-shim.js', included: true, watched: false},
-            {pattern: 'node_modules/es6-promise/es6-promise.js', included:true, watched:false},
+            {pattern: 'node_modules/es6-shim/es6-shim.js', included: true, watched: false},
+            {pattern: 'node_modules/es6-promise/dist/es6-promise.js', included:true, watched:false},
             {pattern: 'node_modules/zone.js/dist/zone.js', included:true, watched:false},
             {pattern: 'node_modules/zone.js/dist/long-stack-trace-zone.js', included:true, watched:false},
             {pattern: 'node_modules/zone.js/dist/async-test.js', included:true, watched:false},
@@ -24,7 +24,7 @@ module.exports = function (config) {
             {pattern: 'node_modules/reflect-metadata/Reflect.js', include: true, watched:false},
             {pattern: 'node_modules/rxjs/**', include:true, watched:false},
             {pattern: 'node_modules/angular2/**/*.js', include:true, watched:false},
-            {pattern: 'app/**/*.test.js', include:true, watched:false}
+            {pattern: 'app/**/*.test.ts', include:true, watched:false}
         ],
 
 
@@ -40,6 +40,9 @@ module.exports = function (config) {
 
         webpack: {
             devtool: 'inline-source-map',
+            entry:{
+                "declare": "./app/declaration"
+            },
             resolve: {
                 extensions: ['', '.js', '.ts','.css','.html']
             },
@@ -87,7 +90,7 @@ module.exports = function (config) {
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
-        singleRun: false,
+        singleRun: true,
 
         // Concurrency level
         // how many browser should be started simultaneous

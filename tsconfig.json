@@ -10,7 +10,8 @@
     "noImplicitAny": false
   },
   "files": [
-    "node_modules/angular2/typings/browser.d.ts"
+    "node_modules/angular2/typings/browser.d.ts",
+    "typings/browser.d.ts"
   ],
   "compileOnSave": false,
   "buildOnSave": false
