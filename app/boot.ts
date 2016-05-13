@@ -1,4 +1,6 @@
-import {bootstrap}    from 'angular2/platform/browser'
-import {AppComponent} from './app.component'
+import {setStatusBarColors} from "./utils/status-bar-util";
+import {AppComponent} from "./app.component";
+import {nativeScriptBootstrap} from "nativescript-angular/application";
 
-bootstrap(AppComponent);
+setStatusBarColors();
+nativeScriptBootstrap(AppComponent);
