@@ -7,6 +7,15 @@
     "start": "webpack-dev-server --inline --hot",
     "test": "karma start"
   },
+  "nativescript": {
+    "id": "org.nativescript.groceries",
+    "tns-ios": {
+      "version": "2.0.0"
+    },
+    "tns-android": {
+      "version": "2.0.0"
+    }
+  },
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.23.1",
@@ -24,7 +33,12 @@
     "typings": "^0.7.12",
     "webpack": "^1.3.0",
     "webpack-dev-server": "^1.14.1",
-    "nativescript-dev-typescript": "^0.3.2"
+    "nativescript-dev-typescript": "^0.3.2",
+    "babel-traverse": "6.8.0",
+    "babel-types": "6.8.1",
+    "babylon": "6.8.0",
+    "filewalker": "0.1.2",
+    "lazy": "1.0.11"
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.13",
