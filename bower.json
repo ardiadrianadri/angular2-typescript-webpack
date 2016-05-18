@@ -1,0 +1,26 @@
+{
+  "name": "angular2-typescript-webpack",
+  "description": "Angular 2, TypeScript and Webpack",
+  "main": "",
+  "authors": [
+    "ardiadrianadri <ardiadrianadri@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular2",
+    "webpack",
+    "polymer"
+  ],
+  "homepage": "https://github.com/ardiadrianadri/angular2-typescript-webpack",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-input": "PolymerElements/paper-input#^1.1.11"
+  }
+}

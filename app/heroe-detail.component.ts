@@ -24,4 +24,8 @@ export class HeroeDetailComponent implements OnInit{
     goBack(){
         window.history.back();
     }
+
+    updateName(event){
+        this.heroe.name = event.srcElement.value;
+    }
 }

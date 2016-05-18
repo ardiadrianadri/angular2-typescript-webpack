@@ -1,9 +1,11 @@
+<link rel="import" href="../bower_components/paper-input/paper-input.html"/>
 <div *ngIf="heroe">
     <h2>{{heroe.name}} details!</h2>
     <div><label>id: </label>{{heroe.id}}</div>
     <div>
-        <label>name: </label>
-        <input [(ngModel)]="heroe.name" placeholder="name"/>
+        <paper-input label="name" value="{{heroe.name}}" (change)="updateName($event)"></paper-input>
+        <!--<label>name: </label>
+        <input [(ngModel)]="heroe.name" placeholder="name"/>-->
     </div>
     <button (click)="goBack()">Back</button>
 </div>
